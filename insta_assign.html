@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            height: 70%;
+            width: 30%;
+            /* border: 1px solid rgb(191, 190, 190); */
+        }
+        #inner-box1 {
+            height: 70%;
+            border: 1px solid rgb(191, 190, 190);
+            
+        }
+        #inner-box2 {
+            height: 10%;
+            border: 1px solid rgb(191, 190, 190);
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            margin-top: 8px;
+        }
+        #inner-box3 {
+            height: 18%;
+            /* border: 1px solid rgb(191, 190, 190); */
+            display: flex;
+        }
+        .sub-box {
+            /* border: 1px solid rgb(191, 190, 190); */
+            height: 98%;
+            width: 70%;
+            margin: auto;
+        }
+        .logo {
+            /* border: 2px dashed green; */
+            height: 20%;
+            display: flex;
+            justify-content: center;
+        }
+        .input {
+            /* border: 2px dashed red; */
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .links {
+            /* border: 2px dashed yellow; */
+            height: 27%;
+        }
+        img {
+            width: 80%;
+            height: 100%;
+        }
+        input {
+            height: 20%;
+            margin: 4px;
+            border: 1px solid rgb(191, 190, 190);
+        }
+        button {
+            height: 20%;
+            border-radius: 10px;
+            background-color: rgb(0,149,246);
+            border: none;
+            margin-top: 8px;
+        }
+        .or {
+            display: flex;
+        }
+        .link {
+           /* border: 2px solid red; */
+           width: 70%;
+           margin: auto;
+           text-align: center;
+        }
+        hr {
+            width: 40%;
+            size: 0;
+            border-style: solid none none none;
+            color: gray;
+        }
+        #link1 {
+            color: #385185;
+        }
+        #link2 {
+            margin-top: 10%;
+            color: rgb(35, 137, 103);
+        }
+        .download {
+            width: 50%;
+        }
+        #phone {
+            display: flex;
+            justify-content: center;
+            border: none;
+        }
+        a {
+            text-decoration: none;
+            margin: 2;
+        }
+        p {
+            margin: auto;
+        }
+        #signup {
+            color: #0095F6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="phone">
+            <img src="https://thecybersafetylady.com.au/wp-content/uploads/2018/10/Screen-Shot-2018-10-05-at-2.09.37-pm-600x900.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="box">
+            <div class="inner-box" id="inner-box1">
+                <div class="sub-box">
+                    <div class="logo">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit">Log in</button>
+                    </div>
+                    <div class="links">
+                        <div class="or">
+                            <hr> OR <hr>
+                        </div>
+                        <div class="link">
+                            <a href="#" id="link1">Log in with Facebook</a> <br> <br>
+                            <a href="#" id="link2">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-box" id="inner-box2">
+                <p>Don't have an account?<a href="#" id="signup">Sign up</a></p>
+            </div>
+            <h4 style="font-weight: normal; text-align: center;">Get the app</h4>
+            <div class="inner-box" id="inner-box3">
+                <img src="https://e7.pngegg.com/pngimages/270/658/png-clipart-app-store-apple-google-play-apple-text-logo-thumbnail.png" alt="" class="download">
+                <img src="https://e7.pngegg.com/pngimages/961/859/png-clipart-google-play-android-app-store-apple-android-text-rectangle-thumbnail.png" alt="" class="download">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
