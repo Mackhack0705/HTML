@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            animation-name: frontend_d;
+            display: inline-block;
+            /* animation-duration: 10s; */
+            /* position: absolute; */
+            /* animation-iteration-count: 5; */
+            /* animation-timing-function: ease-in-out; */
+            cursor: pointer;
+            /* transition-property: height,width,border-radius;
+            transition-duration: 0.5s; */
+            transition: all 5s;
+        }
+        @keyframes frontend_d {
+            0%{
+                left: 0px;
+                top: 0px;
+                
+            }
+            25%{
+                left: 300px;
+                top: 0px;
+                
+            }
+            50%{
+                left: 300px;
+                top: 300px;
+                
+            }
+            75%{
+                left: 0px;
+                top: 300px;
+                
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                
+            }
+        }
+        .box:hover {
+            height: 250px;
+            width: 200px;
+            border-radius: 10px;
+            /* transform: rotate(180deg); */
+            /* transform: translateY(180px); */
+            /* transform: scale(2); */
+            transform: skew(160deg);
+            transform: skew(-45deg);
+            transform: skew(45deg 90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+</body>
+</html>
