@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Login page</title>
     <style>
         .container {
             height: 100vh;
@@ -13,70 +13,82 @@
             align-items: center;
         }
         .box {
-            height: 80%;
-            width: 30%;
+            height: 90%;
+            margin: 0 .8%;
             /* border: 1px solid rgb(191, 190, 190); */
         }
+        #box1 {
+            width: 30%;
+        }
+        #box2 {
+            width: 25%;
+        }
         #inner-box1 {
-            height: 70%;
-            border: 1px solid rgb(191, 190, 190);
+            height: 72%;
+            border: 1px solid rgba(0, 0, 0,0.2);
             
         }
         #inner-box2 {
             height: 10%;
-            border: 1px solid rgb(191, 190, 190);
+            border: 1px solid rgba(0, 0, 0,0.2);
             display: flex;
             justify-items: center;
             align-items: center;
             margin-top: 8px;
         }
         #inner-box3 {
-            height: 18%;
+            height: 16%;
             /* border: 1px solid rgb(191, 190, 190); */
             display: flex;
             justify-content: center;
         }
         .sub-box {
             /* border: 1px solid rgb(191, 190, 190); */
-            height: 98%;
-            width: 70%;
-            margin: auto;
+            height: 96%;
+            width: 76%;
+            margin: 10px auto;
         }
         .logo {
             /* border: 2px dashed green; */
-            height: 20%;
+            height: 36%;
+            /* margin: 22% 0 13%; */
             display: flex;
             justify-content: center;
+            align-items: center;
         }
         .input {
             /* border: 2px dashed red; */
-            height: 50%;
+            height: 45%;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         .links {
             /* border: 2px dashed yellow; */
-            height: 27%;
+            height: 17%;
+        }
+        #instalogo {
+            height: 33%;
+            width: 60%;
         }
         img {
             width: 100%;
             height: 100%;
         }
         input {
-            height: 20%;
-            margin: 4px;
+            height: 18%;
+            margin: 3px 0;
             border: 1px solid rgb(191, 190, 190);
+            border-radius: 3px;
         }
         button {
-            height: 20%;
+            height: 16%;
             border-radius: 10px;
             background-color: rgb(0,149,246);
+            opacity: 0.7;
             border: none;
-            margin-top: 8px;
-        }
-        .or {
-            display: flex;
+            margin-top: 12px;
+            color: white;
         }
         .link {
            /* border: 2px solid red; */
@@ -85,21 +97,29 @@
            text-align: center;
         }
         hr {
-            width: 40%;
+            width: 30%;
             size: 0;
+            display: inline-block;
             border-style: solid none none none;
             color: gray;
+        }
+        .or {
+            color: gray;
+            margin: 18px 0;
+            display: flex;
+            font-size: 15px;
         }
         #link1 {
             color: #385185;
         }
         #link2 {
             margin-top: 10%;
-            color: rgb(35, 137, 103);
+            font-size: 14px;
+            color: #385185;
         }
-        #download {
+        .download {
             width: 40%;
-            height: 60%;
+            height: 54%;
         }
         #box1 {
             display: flex;
@@ -137,41 +157,40 @@
             }
         }
     </style>
+    <script src="https://kit.fontawesome.com/02c7b72695.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="box" id="box1">
-            <img src="https://thecybersafetylady.com.au/wp-content/uploads/2018/10/Screen-Shot-2018-10-05-at-2.09.37-pm-600x900.png" alt="">
+            <img src="phone.png" alt="">
         </div>
         <div class="box" id="box2">
             <div class="inner-box" id="inner-box1">
                 <div class="sub-box">
                     <div class="logo">
-                        <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="">
+                        <img id="instalogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEdwcSBVv9WuDbaP65gdw9ifwapkxK-b2G_Q&usqp=CAU" alt="">
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="password">
+                        <input type="text" placeholder="Phone number, username, or email">
+                        <input type="password" placeholder="Password">
                         <button type="submit">Log in</button>
+                        <div class="or"><hr> OR <hr></div>
                     </div>
                     <div class="links">
-                        <div class="or">
-                            <hr> OR <hr>
-                        </div>
                         <div class="link">
-                            <a href="#" id="link1">Log in with Facebook</a> <br> <br>
+                            <h4 style="margin: 0 0 16px;"><a href="#" id="link1"><i class="fa-brands fa-square-facebook" style="color: #385185;"></i>&nbsp;Log in with Facebook</a></h4>
                             <a href="#" id="link2">Forgot password?</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="inner-box" id="inner-box2">
-                <p>Don't have an account?<a href="#" id="signup">Sign up</a></p>
+                <p>Don't have an account?<a href="#" id="signup">&nbsp;Sign up</a></p>
             </div>
-            <h4 style="font-weight: normal; text-align: center;">Get the app</h4>
+            <p style="text-align: center; margin: 15px 0 15px">Get the app</p>
             <div class="inner-box" id="inner-box3">
-                <img src="https://e7.pngegg.com/pngimages/270/658/png-clipart-app-store-apple-google-play-apple-text-logo-thumbnail.png" alt="" id="download">
-                <img src="https://e7.pngegg.com/pngimages/961/859/png-clipart-google-play-android-app-store-apple-android-text-rectangle-thumbnail.png" alt="" id="download">
+                <img  class="download" src="https://e7.pngegg.com/pngimages/270/658/png-clipart-app-store-apple-google-play-apple-text-logo-thumbnail.png" alt="">
+                <img  class="download" src="https://e7.pngegg.com/pngimages/961/859/png-clipart-google-play-android-app-store-apple-android-text-rectangle-thumbnail.png" alt="">
             </div>
         </div>
     </div>
