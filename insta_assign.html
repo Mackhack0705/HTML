@@ -13,7 +13,7 @@
             align-items: center;
         }
         .box {
-            height: 70%;
+            height: 80%;
             width: 30%;
             /* border: 1px solid rgb(191, 190, 190); */
         }
@@ -34,6 +34,7 @@
             height: 18%;
             /* border: 1px solid rgb(191, 190, 190); */
             display: flex;
+            justify-content: center;
         }
         .sub-box {
             /* border: 1px solid rgb(191, 190, 190); */
@@ -59,7 +60,7 @@
             height: 27%;
         }
         img {
-            width: 80%;
+            width: 100%;
             height: 100%;
         }
         input {
@@ -96,10 +97,11 @@
             margin-top: 10%;
             color: rgb(35, 137, 103);
         }
-        .download {
-            width: 50%;
+        #download {
+            width: 40%;
+            height: 60%;
         }
-        #phone {
+        #box1 {
             display: flex;
             justify-content: center;
             border: none;
@@ -114,14 +116,34 @@
         #signup {
             color: #0095F6;
         }
+        @media (max-width:825px){
+            #box1 {
+                display: none;
+            }
+            #box2 {
+                width: 40%;
+            }
+        }
+        @media (max-width:586px){
+            #link1 {
+                font-size: 12px;
+            }
+            #link2 {
+                font-size: 12px;
+
+            }
+            p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box" id="phone">
-            <img src="https://thecybersafetylady.com.au/wp-content/uploads/2018/10/Screen-Shot-2018-10-05-at-2.09.37-pm-600x900.png" alt="" width="100%" height="100%">
+        <div class="box" id="box1">
+            <img src="https://thecybersafetylady.com.au/wp-content/uploads/2018/10/Screen-Shot-2018-10-05-at-2.09.37-pm-600x900.png" alt="">
         </div>
-        <div class="box">
+        <div class="box" id="box2">
             <div class="inner-box" id="inner-box1">
                 <div class="sub-box">
                     <div class="logo">
@@ -148,8 +170,8 @@
             </div>
             <h4 style="font-weight: normal; text-align: center;">Get the app</h4>
             <div class="inner-box" id="inner-box3">
-                <img src="https://e7.pngegg.com/pngimages/270/658/png-clipart-app-store-apple-google-play-apple-text-logo-thumbnail.png" alt="" class="download">
-                <img src="https://e7.pngegg.com/pngimages/961/859/png-clipart-google-play-android-app-store-apple-android-text-rectangle-thumbnail.png" alt="" class="download">
+                <img src="https://e7.pngegg.com/pngimages/270/658/png-clipart-app-store-apple-google-play-apple-text-logo-thumbnail.png" alt="" id="download">
+                <img src="https://e7.pngegg.com/pngimages/961/859/png-clipart-google-play-android-app-store-apple-android-text-rectangle-thumbnail.png" alt="" id="download">
             </div>
         </div>
     </div>

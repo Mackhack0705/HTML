@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 160vh;
+            /* border: 2px solid black; */
+            color: white;
+        }
+        .box1 {
+            height: 90%;
+            /* border: 2px dashed red; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box2 {
+            height: 9%;
+            /* border: 2px dashed blue; */
+            background-color: #009688;
+            text-align: center;
+        }
+        .innerbox {
+            margin: 8px;
+        }
+        #innerbox1 {
+            height: 95%;
+            width: 30%;
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+        #innerbox2 {
+            height: 98%;
+            width: 60%;
+            /* border: 2px dotted yellow; */
+        }
+        .subbox {
+            padding: 0 30px;
+        }
+        #subbox1 {
+            margin-bottom: 10px;
+            height: 60%;
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+        #subbox2 {
+            height: 37%;
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+        .pro {
+            margin: 2px;
+        }
+        #pro1 {
+            height: 40%;
+            /* border: 2px dotted black; */
+        }
+        #pro2 {
+            height: 28%;
+            /* border: 2px dotted black; */
+            padding: 0 30px;
+        }
+        #pro3 {
+            height: 30%;
+            /* border: 2px dotted black; */
+            padding: 0 30px;
+        }
+        #name {
+            color: black;
+            position: absolute;
+            top: 220px;
+            left: 100px;
+        }
+        h1,h2 {
+            margin: 8px 0;
+            color: black;
+        }
+        p {
+            margin: 4px 0;
+            color: black;
+        }
+        .profile {
+            height: 70%;
+            /* border: 2px solid red; */
+            background: url('https://www.w3schools.com/w3images/avatar_hat.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .description {
+            height: 38%;
+            /* border: 2px solid blue; */
+            padding: 0 20px;
+        }
+        .languages {
+            height: 20%;
+        }
+        progress {
+            height: 8%;
+            width: 100%;
+        }
+        .experience {
+            margin: 50px 0;
+        }
+        .year {
+            color: #009688;
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/02c7b72695.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #f1f1f1;">
+    <div class="container">
+        <div class="box1">
+            <div class="innerbox" id="innerbox1">
+                <div class="pro" id="pro1">
+                    <div class="profile">
+                        <h1 id="name">Jane Doe</h1>
+                    </div>
+                    <div class="description">
+                        <p><i class="fa-solid fa-briefcase" style="color: #009688;"></i>&nbsp;&nbsp;Designer</p>
+                        <p><i class="fa-solid fa-house" style="color: #009688;"></i>&nbsp;&nbsp;London,UK</p>
+                        <p><i class="fa-solid fa-envelope" style="color: #009688;"></i>&nbsp;&nbsp;ex@mail.com</p>
+                        <p><i class="fa-solid fa-phone" style="color: #009688;"></i>&nbsp;&nbsp;1224435534</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="pro" id="pro2">
+                    <h2><i class="fa-solid fa-star-of-life fa-2xs" style="color: #009688;"></i>&nbsp;&nbsp;skills</h2>
+                        <p>Adobe Photoshop</p>
+                        <progress value="90" max="100"> 90% </progress>
+                        <p>Photography</p>
+                        <progress value="80" max="100"> 80% </progress>
+                        <p>Illustrator</p>
+                        <progress value="75" max="100"> 75% </progress>
+                        <p>Media</p>
+                        <progress value="50" max="100"> 50% </progress>
+
+                </div>
+                <div class="pro" id="pro3">
+                    <h2><i class="fa-solid fa-earth-americas fa-2xs" style="color: #009688;"></i>&nbsp;&nbsp;Languages</h2>
+                    <p>English</p>
+                    <progress class="languages" value="100" max="100"> 100% </progress>
+                    <p>Spanish</p>
+                    <progress class="languages" value="50" max="100"> 50% </progress>
+                    <p>German</p>
+                    <progress class="languages" value="20" max="100"> 20% </progress>
+                </div>
+            </div>
+            <div class="innerbox" id="innerbox2">
+                <div class="subbox" id="subbox1">
+                    <h1><i class="fa-solid fa-suitcase" style="color: #009688;"></i>&nbsp;&nbsp;&nbsp;Work Experience</h1>
+                    <div class="experience">
+                        <h2>Front End Developer/w3schools.com</h2>
+                        <p class="year"><i class="fa fa-calendar fa-fw" style="color: #009688;"></i> Jan 2015-Current</p>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    </div>
+                    <hr>
+                    <div class="experience">
+                        <h2>Web Developer/something.com</h2>
+                        <p class="year">
+                            <i class="fa fa-calendar fa-fw" style="color: #009688;"></i> Mar 2012-Dec 2014
+                        </p>
+                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    </div>
+                    <hr>
+                    <div class="experience">
+                        <h2>Graphic Designer/designsomething.com</h2>
+                        <p class="year">
+                            <i class="fa fa-calendar fa-fw" style="color: #009688;"></i> Jun 2010-Mar 2012
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+                <div class="subbox" id="subbox2">
+                    <h1><i class="fa-sharp fa-solid fa-certificate" style="color: #009688;"></i>&nbsp;&nbsp;&nbsp;Education</h1>
+                    <div class="education">
+                        <h2>W3Schools.com</h2>
+                        <p class="year">
+                            <i class="fa fa-calendar fa-fw" style="color: #009688;"></i> Forever
+                        </p>
+                        <p>Web Development! All I need to know in one place</p>
+                    </div>
+                    <hr>
+                    <div class="education">
+                        <h2>London Business School</h2>
+                        <p class="year">
+                            <i class="fa fa-calendar fa-fw" style="color: #009688;"></i> 2013-2015
+                        </p>
+                        <p>Master Degree</p>
+                    </div>
+                    <hr>
+                    <div class="education">
+                        <h2>School of Coding</h2>
+                        <p class="year">
+                            <i class="fa fa-calendar fa-fw" style="color: #009688;"></i> 2010-2013
+                        </p>
+                        <p>Bachelor Degree</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <p style="color: #ffffff;">Find me on social media.</p>
+            <div class="contact">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </div>
+            
+            <p style="color: #ffffff;">Powered by <a href="#" style="color: #ffffff;">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>

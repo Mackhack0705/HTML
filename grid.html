@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: 1fr 3fr 1fr;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 1rem; */
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+        .box {
+            border: 2px dotted black;
+        }
+        #box1 {
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 1rem;
+        }
+        header {
+            border: 2px solid black;
+        }
+        #box2 {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .innerbox {
+            border: 2px dotted black;
+        }
+        #innerbox2 {
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <header></header>
+            <header></header>
+            <header></header>
+            <header></header>
+        </div>
+        <div class="box" id="box2">
+            <div class="innerbox" id="innerbox1"></div>
+            <div class="innerbox" id="innerbox2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="box" id="box3"></div>
+    </div>
+</body>
+</html>
