@@ -8,139 +8,181 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma sans-serif;
         }
         .container {
             height: 500vh;
-            border: 2px solid black;
-            /* padding-bottom: -50%; */
-        }
-        .box {
-            width: 100%;
-            /* border: 2px dashed yellow; */
         }
         #box1 {
-            height: 1.5%;
-            border: 2px dashed yellow;
+            height: 2%;
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            letter-spacing: 2px;
             display: flex;
+            z-index: 2;
             justify-content: space-between;
             align-items: center;
+            padding: 0 15px;
         }
         #box2 {
-            height: 24%;
-            border: 2px dashed red;
-            background: url('https://www.w3schools.com/w3images/architect.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            
+            height: 23%;
+            text-align: center;
+        }
+        #box2 img {
+            width: 99%;
         }
         #box3 {
             height: 18%;
-            border: 2px dashed blue;
         }
         #box4 {
-            height: 20%;
-            border: 2px dashed green;
+            height: 19%;
         }
         #box5 {
-            height: 16%;
-            border: 2px dashed orange;
-            box-sizing: border-box;
-            padding: 4% 1%;
+            height: 13%;
         }
         #box6 {
-            height: 24%;
-            border: 2px dashed purple;
+            height: 22%;
+            text-align: center;
+        }
+        #box6 img {
+            width: 97%;
         }
         #box7 {
-            height: 2.4%;
-            border: 2px dashed palevioletred;
+            height: 2.5%;
         }
         .inner-box {
-            height: 50%;
-            border: 2px dotted black;
+            height: 60%;
         }
 
         #logo {
             width: 30%;
-            padding-left: 2%;
         }
 
         #menu {
             width: 50%;
             display: flex;
             justify-content: end;
+            flex-wrap: wrap;
+        }
+        .projects {
+            height: 85%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about {
+            height: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .contact {
+            height: 80%;
+            padding: 0px 20px;
+        }
+        .footer{
+            height: 100%;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            padding: 2% 0;
+            font-size: 15px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .projectitems {
+            height: 239px;
+            width:355px;
+        }
+        .profile {
+            height: 460px;
+            width: 355px;
+        }
+        .pro-box {
+            height: 40px;
+            width: 160px;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .pro-box:hover {
+            background-color: #c5c5c5;
+        }
+        .sub-box {
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .sub-box:hover {
+            background-color: #c5c5c5;
         }
         a {
             color: black;
             text-decoration: none;
-            font-size: 20px;
-        }
-        
-        .sub-box {
-            width: 20%;
-            border: 2px dotted yellow;
-            text-align: center;
-            font-size: 20px;
+            font-size: 17px;
         }
         img {
             height: 100%;
             width: 100%;
         }
+        .profilephoto {
+            height: 52%;
+        }
+        .brandname {
+            position: absolute;
+            color: white; 
+            top: 65%;
+            left: 42%;
+            font-weight: 400;
+            font-size: 36px;
+        }
+        .bn {
+            background-color: #000; 
+            opacity: 0.75; 
+            padding: 10px;
+        }
+        .heading {
+            margin: 20px 20px;
+            font-weight: 100;
+            font-size: 24px;
+        }
+        hr {
+            margin: 20px;
+            opacity: 0.1;
+        }
+        .des {
+            margin: 30px 22px;
+        }
         h2 {
-            border: 2px dotted green;
             font-weight: normal;
-        }
-        .projects {
-            height: 76%;
-            border: 2px dotted black;
-            /* margin: .5% 0; */
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        #list1 {
-            border: 2px dotted red;
-        }
-        #list2 {
-            border: 2px dotted green;
-        }
-        .projectitems {
-            height: 40%;
-            width: 23%;
-            border: 2px dotted blue;
         }
         p {
-            font-size: 20px;
+            font-size: 15px;
         }
-        .profiles {
-            height: 69%;
-            border: 2px solid yellow;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .profile {
-            height: 90%;
-            width: 24%;
-            border: 2px solid black;
-        }
-        .profilephoto {
-            height: 50%;
-            border: 2px solid blue;
-            
-        }
-        .description {
+        .profile-des {
             height: 48%;
-            border: 2px solid green;
         }
-        h3 {
+        .name {
+            margin: 15px 0;
+        }
+        .post {
+            margin: 13px 0;
             font-weight: normal;
-            border: 2px solid red;
+        }
+        .cont {
+            margin-top: 20px;
+        }
+        .cont:hover {
+            background-color: #c5c5c5;
         }
         button {
-            height: 15%;
+            height: 16%;
             width: 100%;
             outline: none;
             border: none;
@@ -153,12 +195,17 @@
             color: white;
             margin-top: 15px;
         }
+        .send:hover {
+            color: #000;
+            background-color: #c5c5c5;
+        }
         input {
             display: block;
-            width: 99%;
+            width: 99.5%;
             height: 40px;
             font-size: 16px;
             margin: 15px 0;
+            padding-left: 8px;
         }
         .tag {
             position: absolute;
@@ -167,17 +214,14 @@
             width: 140px;
             height: 35px;
             text-align: center;
-            font-size: 18px;
+            padding: 5px 0;
+            font-size: 15px;
+            z-index: 1;
         }
-        .projectitems img {
-            opacity: 0.3;
+        .house {
+            opacity: 0.7;
         }
         .house:hover {
-            transform: scale(1.1);
-            opacity: 1;
-            border-radius: 10px;
-        }
-        .tag:hover {
             transform: scale(1.1);
             opacity: 1;
             border-radius: 10px;
@@ -186,20 +230,22 @@
 </head>
 <body>
     <div class="container">
+         <!-- Nav bar -->
         <div class="box" id="box1">
             <div class="inner-box" id="logo">
-                <a href="#"><strong>BR</strong> Architects</a>
+                <div class="pro-box" id="logoname"><a href="#"><strong>BR</strong> Architects</a></div>
             </div>
             <div class="inner-box" id="menu">
-                <div class="sub-box" id="projects">Projects</div>
-                <div class="sub-box" id="about">About</div>
-                <div class="sub-box" id="Contact">Contact</div>
+                <div class="sub-box" id="projects"><a href="#box3">Projects</a></div>
+                <div class="sub-box" id="about"><a href="#box4">About</a></div>
+                <div class="sub-box" id="Contact"><a href="#box5">Contact</a></div>
             </div>
         </div>
         <div class="box" id="box2">
-            <h1 style="color: white; margin: 30% 0 0 45%;"><strong style="background-color: #000; opacity: 0.75; padding: 10px;">BR</strong> Architect</h1>
-            <!-- <img src="https://www.w3schools.com/w3images/architect.jpg" alt=""> -->
+            <h1 class="brandname"><strong class="bn">BR</strong> Architects</h1>
+            <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
         </div>
+        <!-- Projects -->
         <div class="box" id="box3">
             <h2 class="heading">Projects</h2>
             <hr>
@@ -220,89 +266,95 @@
                         <div class="tag">Barn House</div>
                         <img class="house" src="https://www.w3schools.com/w3images/house4.jpg" alt="">
                     </div>
-                    <div class="projectitems" id="project4">
+                    <div class="projectitems" id="project5">
                         <div class="tag">Summer House</div>
                         <img class="house" src="https://www.w3schools.com/w3images/house2.jpg" alt="">
                     </div>
-                    <div class="projectitems" id="project5">
+                    <div class="projectitems" id="project6">
                         <div class="tag">Brick House</div>
                         <img class="house" src="https://www.w3schools.com/w3images/house5.jpg" alt="">
                     </div>
-                    <div class="projectitems" id="project6">
+                    <div class="projectitems" id="project7">
                         <div class="tag">Renovated</div>
                         <img class="house" src="https://www.w3schools.com/w3images/house4.jpg" alt="">
                     </div>
-                    <div class="projectitems" id="project7">
+                    <div class="projectitems" id="project8">
                         <div class="tag">Barn House</div>
                         <img class="house" src="https://www.w3schools.com/w3images/house3.jpg" alt="">
                     </div>
             </div>
         </div>
+        <!-- About -->
         <div class="box" id="box4">
             <h2 class="heading">About</h2>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="profiles">
+            <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="about">
                 <div class="profile" id="profile1">
                     <div class="profilephoto">
                         <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
                     </div>
-                    <div class="description">
-                        <h2>John Doe</h2>
-                        <h3>CEO & Founder</h3>
+                    <div class="profile-des">
+                        <h2 class="name">John Doe</h2>
+                        <h3 class="post">CEO & Founder</h3>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button>Contact</button>
+                        <button class="cont">Contact</button>
                     </div>
                 </div>
                 <div class="profile" id="profile2">
                     <div class="profilephoto">
                         <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
                     </div>
-                    <div class="description">
-                        <h2>John Doe</h2>
-                        <h3>Architect</h3>
+                    <div class="profile-des">
+                        <h2 class="name">John Doe</h2>
+                        <h3 class="post">Architect</h3>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button>Contact</button>
+                        <button class="cont">Contact</button>
                     </div>
                 </div>
                 <div class="profile" id="profile3">
                     <div class="profilephoto">
                         <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
                     </div>
-                    <div class="description">
-                        <h2>Mike Ross</h2>
-                        <h3>Architect</h3>
+                    <div class="profile-des">
+                        <h2 class="name">Mike Ross</h2>
+                        <h3 class="post">Architect</h3>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button>Contact</button>
+                        <button class="cont">Contact</button>
                     </div>
                 </div>
                 <div class="profile" id="profile4">
                     <div class="profilephoto">
                         <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
                     </div>
-                    <div class="description">
-                        <h2>Dan Star</h2>
-                        <h3>Architect</h3>
+                    <div class="profile-des">
+                        <h2 class="name">Dan Star</h2>
+                        <h3 class="post">Architect</h3>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <button>Contact</button>
+                        <button class="cont">Contact</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Contact -->
         <div class="box" id="box5">
             <h2 class="heading">Contact</h2>
             <hr>
-            <p>Lets get in touch and talk about your next project.</p>
-            <input type="text" placeholder="Name">
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <input type="text" placeholder="Comment">
-            <button class="send">SEND MESSAGE</button>
+            <div class="contact">
+                <p>Lets get in touch and talk about your next project.</p>
+                <input type="text" placeholder="Name">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Comment">
+                <button class="send">SEND MESSAGE</button>
+            </div>
         </div>
         <div class="box" id="box6">
             <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
         </div>
-        <div class="box" id="box7">7</div>
+        <div class="box" id="box7">
+            <div class="footer">Powered by <a href="#">w3.css</a></div>
+        </div>
     </div>
 </body>
 </html>
